@@ -33,10 +33,35 @@
         </button>
         <div class="nav-hide" id="nav-list">
             <img class="material-icons" id="clear" src="./images/clear-24px.svg" alt='close'>
-            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="index.html">Back to Home</a></li>
+            <li><a class="link" href="#about">About CrossWoC</a></li>
+            <li><a class="link" href="#tracks">Why Sponsor?</a></li>
+            <li><a class="link" href="#contact-us">Contact Us</a></li>
 
         </div>
     </nav>
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-mainbg">
+       
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href=""><i class="fas fa-tachometer-alt"></i>                                   </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="far fa-address-book"></i>🏠 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tracks"><i class="far fa-calendar-alt"></i>ℹ️  Why Sponsor?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-us"><i class="far fa-clone"></i>📲 Contact</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>-->
     
     <section class="about-us mech" id="about">
         <div class="content">
@@ -351,19 +376,17 @@
             <div class="list">
                 <div class="contact-ele">
                     <img src="https://img.icons8.com/officel/40/000000/whatsapp.png" alt="">
-                    <div class="details"><a href="tel:+919811355653"><span class="name">Shivam Kansal</span>
-                            +91-9811355653</div>
+                    <div class="details"><a href="tel:+919811355653"><span class="name">Shivam </span>
+                            9811355653</div>
                             <img src="https://img.icons8.com/officel/40/000000/whatsapp.png" alt="">
-                    <div class="details"><a href="tel:+91 9910847595"><span class="name">Lavanisha Prasad</span>
-                        +91 9910847595</div>
+                    <div class="details"><a href="tel:+91 9910847595"><span class="name">Lavanisha </span>
+                        9910847595</div>
+                        <img src="https://img.icons8.com/officel/40/000000/whatsapp.png" alt="">
+                        <div class="details"><a href="tel:+919560886067"><span class="name">Hemabh </span>
+                                9560886067</div>
                 </div>
 
-                <div class="contact-ele">
-                    <img src="./images/instagram-logo.png" class="icon" alt="">
-                    <div class="details"><a href="https://www.instagram.com/ieeedtu/?hl=en" class="name"
-                            style="cursor: pointer;">@ieeedtu</a>
-                    </div>
-                </div>
+               
                 <div class="contact-ele">
                     <img src="https://img.icons8.com/color/48/000000/gmail.png" class="icon" alt="">
                     <div class="details"><a href="mailto:shivamkansal@ieee.org" class="name site"
@@ -376,7 +399,12 @@
                     style="cursor: pointer;">lavanishaprasad@gmail.com</a>
             </div>
                 </div>
-
+                <div class="contact-ele">
+                    <img src="./images/instagram-logo.png" class="icon" alt="">
+                    <div class="details"><a href="https://www.instagram.com/ieeedtu/?hl=en" class="name"
+                            style="cursor: pointer;">@ieee.dtu</a>
+                    </div>
+                </div>
                 <div class="contact-ele">
                     <img src="https://img.icons8.com/ios-filled/64/000000/link.png" class="icon" alt="">
                     <div class="details">
@@ -389,12 +417,37 @@
     </section>
     <footer>
         <span class="us">Developed with ❤️ by IEEE-DTU<span>
-            <br><br><span>Webpage developed by : Sonal Bera, Priyansh Tyagi, Ansh Agrawal</span>
+            <br><br><span>Developed by : Sonal Bera, Priyansh Tyagi, Ansh Agrawal</span>
             <br><br><span>Template credits : Arpitsinh Vaghela & Kaushal Patil</span>
                 <!--<a href="https://github.com/arpitvaghela" target="_blank" rel="noreferrer noopener">Arpitsinh
                     Vaghela</a> & <a href="https://github.com/Kaushal1011" target="_blank"
                     rel="noreferrer noopener">Kaushal Patil</a>-->
     </footer>
+
+    <script>
+        // navigation
+document.getElementById('clear').addEventListener('click', () => {
+    document.getElementById('nav-list').classList.add('nav-hide');
+})
+document.getElementById('menu-icon').addEventListener('click', () => {
+    document.getElementById('nav-list').classList.remove('nav-hide');
+})
+let ll = document.getElementsByClassName('link')
+
+for (let link of ll) {
+    link.addEventListener('click', () => {
+        document.getElementById('nav-list').classList.add('nav-hide');
+    })
+}
+//faq
+
+buttons = document.getElementsByClassName('add')
+for (let b of buttons) {
+    b.addEventListener('click', (e) => {
+        b.nextElementSibling.classList.toggle('active');
+    })
+}
+    </script>
     <script src="./main.js"></script>
 </body>
 

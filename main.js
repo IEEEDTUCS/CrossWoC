@@ -1,5 +1,4 @@
-
-//counter //fuck jquery
+//counter 
 finaldate = new Date('13 February 2021');
 setInterval(() => {
     let timeleft = finaldate - new Date();
@@ -12,6 +11,50 @@ setInterval(() => {
     m.innerHTML = Math.floor((timeleft / (1000 * 60)) % 60);
     s.innerHTML = Math.floor((timeleft / (1000)) % 60);
 }, 1000);
+
+
+
+/* ---------Responsive-navbar-active-animation-----------
+function test(){
+    var tabsNewAnim = $('#navbarSupportedContent');
+    var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+    var activeItemNewAnim = tabsNewAnim.find('.active');
+    var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+    var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+    var itemPosNewAnimTop = activeItemNewAnim.position();
+    var itemPosNewAnimLeft = activeItemNewAnim.position();
+    $(".hori-selector").css({
+      "top":itemPosNewAnimTop.top + "px", 
+      "left":itemPosNewAnimLeft.left + "px",
+      "height": activeWidthNewAnimHeight + "px",
+      "width": activeWidthNewAnimWidth + "px"
+    });
+    $("#navbarSupportedContent").on("click","li",function(e){
+      $('#navbarSupportedContent ul li').removeClass("active");
+      $(this).addClass('active');
+      var activeWidthNewAnimHeight = $(this).innerHeight();
+      var activeWidthNewAnimWidth = $(this).innerWidth();
+      var itemPosNewAnimTop = $(this).position();
+      var itemPosNewAnimLeft = $(this).position();
+      $(".hori-selector").css({
+        "top":itemPosNewAnimTop.top + "px", 
+        "left":itemPosNewAnimLeft.left + "px",
+        "height": activeWidthNewAnimHeight + "px",
+        "width": activeWidthNewAnimWidth + "px"
+      });
+    });
+  }
+  $(document).ready(function(){
+    setTimeout(function(){ test(); });
+  });
+  $(window).on('resize', function(){
+    setTimeout(function(){ test(); }, 500);
+  });
+  $(".navbar-toggler").click(function(){
+    setTimeout(function(){ test(); });
+  });
+*/
+
 
 // timeline
 document.getElementById('14th').addEventListener('click', () => {
@@ -45,31 +88,10 @@ for (let link of ll) {
     })
 }
 //faq
-
+/*
 buttons = document.getElementsByClassName('add')
 for (let b of buttons) {
     b.addEventListener('click', (e) => {
         b.nextElementSibling.classList.toggle('active');
     })
 }
-//devfolio
-document.addEventListener('DOMContentLoaded', function () {
-    let devfolioOptions = {
-        buttonSelector: '#devfolio-apply-now',
-        key: 'ingenious-hack',
-    }
-
-    let script = document.createElement('script');
-    script.src = "https://apply.devfolio.co";
-    document.head.append(script);
-
-    script.onload = function () {
-        new Devfolio(devfolioOptions);
-    }
-
-    script.onerror = function () {
-        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
-        });
-    }
-});
