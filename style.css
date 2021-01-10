@@ -49,11 +49,11 @@ link {
     display: none !important;
 }
 
-#devfolio-apply-now {
+#click-apply-now {
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background-color: #fe654f;
+    background-color: #1c49dd;
     border-radius: 10px;
     border: none;
     color: #FFFFFF;
@@ -69,11 +69,11 @@ link {
     width: 15em;
 }
 
-#devfolio-apply-now:not([disabled]) {
+#click-apply-now:not([disabled]) {
     cursor: pointer;
 }
 
-#devfolio-apply-now:hover {
+#click-apply-now:hover {
     background-color: #2954BF !important;
 }
 
@@ -661,7 +661,7 @@ img.lp-g {
     align-items: center
 }
 
-.devfolio-btn {
+.click-btn {
     display: inline-block;
     background-color: var(--col3);
     color: var(--bg-col)!important;
@@ -673,7 +673,7 @@ img.lp-g {
     font-size: 120%
 }
 
-.devfolio-btn span {
+.click-btn span {
     font-size: 60%;
     opacity: .6;
     text-transform: uppercase

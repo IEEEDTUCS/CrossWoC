@@ -1,6 +1,6 @@
 
 //counter //fuck jquery
-finaldate = new Date('14 March 2021');
+finaldate = new Date('13 February 2021');
 setInterval(() => {
     let timeleft = finaldate - new Date();
     d = document.getElementById('days');
