@@ -1,4 +1,20 @@
+html, body {
+   /* background-color: rgb(15, 162, 228);*/
+}
 
+
+.landing-page-inverted {
+    background-image: url('./images/invert.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom -30px right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 100vh
+}
 
 .container{
     max-width: 1000px;
@@ -13,7 +29,9 @@
      margin: 20px 0;
      width: 300px;
      height: 400px;
-     background: #fff;
+     padding: 10px;
+     background-color: rgb(252, 252, 252);
+
      transform-style: preserve-3d;
      transform: perspective(2000px);
      transition: 1s;
