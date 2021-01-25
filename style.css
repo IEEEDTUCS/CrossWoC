@@ -18,7 +18,7 @@ File list:
     --text-col: #1a281f;
     --btn-col:rgb(15,162,228);
     --col3: #3b137a;
-    --card-col: #ffffff;
+    --card-col:url();
     --card-col-mech: #f59796;
     --bg-col: #f5f5f5;
     --bg-about-us: #0fa2e4;
@@ -1334,8 +1334,10 @@ i {
     background: #000;
 }
 .card .image {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
+    width: 240px;
+    height: 370px;
     overflow: hidden;
 }
 .card .image img {
@@ -1351,9 +1353,9 @@ i {
     position: absolute;
     top: 0;
     left: 0px;
-    width: 70%;/*100%*/
+    width: 100%;/*100%*/
     height: 100%;
-    background: #ffc107;
+    background: #ffffff;
     transition: .5s;
     transform-origin: left;
     transform: perspective(2000px) rotateY(-90deg);
@@ -1419,7 +1421,7 @@ i {
   /* Clear floats after the columns */
   .image{
       width: 33.3%;
-      height: 400px;
+      height: 370px;
   }
 
   @media screen and (max-width: 600px) {
@@ -1436,3 +1438,28 @@ i {
 
 
   }
+
+  .myButton {
+	box-shadow: 0px 0px 0px 0px #9fb4f2;
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+	border-radius:41px;
+	border:2px solid #0e2e8f;
+	display:inline-block;
+	cursor:pointer;
+	color:#2929b0;
+	font-family:Arial;
+	font-size:11px;
+	padding:3px 23px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+       
